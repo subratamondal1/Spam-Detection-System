@@ -47,9 +47,17 @@ tfidfVectorizer = pickle.load(open("tfidfVectorizer.pkl", "rb"))
 # Loading Model
 multinomialNB = pickle.load(open("multinomialNB.pkl", "rb"))
 
+# App Title
 st.title("Spam Detection System")
 
-input_text = st.text_area("Write or copy paste any text")
+# Caption
+st.caption("""This Spam Detection System is trained on Multinomial Naive Bayes Algorithm, 
+              which gave Accuracy Score of **97%** and Precision Score of **100%** . 
+              Accuracy tells you how many times the ML model was correct overall. 
+              Precision tells you how good the model is at predicting a specific category""")
+
+# User Input
+input_text = st.text_area("Write or copy paste any text in the below box !!!")
 
 if st.button("Predict"):
 
