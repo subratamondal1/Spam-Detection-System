@@ -1,0 +1,5 @@
+# Without this file the app will not deploy
+
+stopwords
+punkt
+
