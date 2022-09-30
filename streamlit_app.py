@@ -5,6 +5,7 @@ import pickle
 import string
 import nltk
 nltk.download('punkt')
+nltk.download('stopwords')
 
 # Initialize PorterStemmer()
 porterStemmer = PorterStemmer()
